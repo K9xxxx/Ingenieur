@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IWC Watch</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./icofont/icofont.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -24,7 +24,7 @@
       </nav>
       <section class="home">
         <div class="main-content-home">
-          <h2>INGENIEUR</h2>
+          <h2 class="main-content-home-h2">INGENIEUR</h2>
           <img src="./img/iwc_main.png" alt="IWC">
           <div class="info">
             <h3>Perfection</h3>
@@ -36,6 +36,7 @@
         <div class="main-spec">
           <div class="spec-title">
             <h3>INGENIEUR    SPECYFICATION</h3>
+            <div class="only-border"></div>
           </div>
           <div class="spec-details">
             <div class="case">
@@ -85,11 +86,113 @@
               </ul>
             </div>
           </div>
+          <div class="spec-details mb">
+            <div class="case">
+              <h4>CASE</h4>
+              <i class="icofont-curved-down"></i>
+              <ul>
+                <li>Stainless steel case</li>
+                <li>Diameter 42.3 mm</li>
+                <li>Height 14.9 mm</li>
+                <li>Screw in crown</li>
+                <li>See-through sapphire glass back</li>
+                <li>Water resistance 12 bar</li>
+              </ul>
+            </div>
+            <div class="movement">
+              <h4>MOVEMENT</h4>
+              <i class="icofont-curved-down"></i>
+              <ul>
+                <li>69375 Calibre</li>
+                <li>IWC-manufactured movement</li>
+                <li>Automatic, self-winding</li>
+                <li>46 hours Power Reserve</li>
+                <li>Frequency 28800.0 vph (4.0 hz)</li>
+                <li>227 Components</li>
+                <li>33 Jewels</li>
+                <li>Côtes de Genève, perlage</li>
+              </ul>
+            </div>
+            <div class="features">
+              <h4>FEATURES</h4>
+              <i class="icofont-curved-down"></i>
+              <ul>
+                <li>Chronograph function with hours, minutes and seconds</li>
+                <li>Date display</li>
+                <li>Sapphire glass, convex, antireflective coating on both sides</li>
+                <li>Small hacking seconds</li>
+              </ul>
+            </div>
+            <div class="dial">
+              <h4>DIAL</h4>
+              <i class="icofont-curved-down"></i>
+              <ul>
+                <li>Blue dial with luminescence</li>
+              </ul>
+            </div>
+            <div class="strap">
+              <h4>STRAP</h4>
+              <i class="icofont-curved-down"></i>
+              <ul>
+                <li>Stainless steel bracelet</li>
+                <li>Strap width 20.0 mm</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="variations">
+        <div class="variations-main-div">
+          <div class="variations-numbers">
+            <h3 class="variations-numbers-h3">VARIATIONS</h3>
+            <div class="inline-var-span">
+              <i class="icofont-curved-left"></i>
+                <span class="inside-var-span">
+                  <p class="var-active">1</p>
+                  <p>/2</p>
+                </span>
+              <i class="icofont-curved-right"></i>
+            </div>
+          </div>
+          <div class="variations-models-main">
+            <div class="variations-model no1">
+              <div class="model-img">
+                <img src="./img/rel1.png" alt="">
+              </div>
+              <div class="model-desc">
+                <h5>INGENIEUR<br> SILVER-GOLD</h5>
+                <ul>
+                  <li>Stainless steel case</li>
+                  <li>Silver-plated dial</li>
+                  <li>Stainless steel bracelet</li>
+                </ul>
+              </div>
+            </div>
+            <div class="variations-model no2">
+              <div class="model-img">
+                <img src="./img/rel2.png" alt="">
+              </div>
+              <div class="model-desc">
+                <h5>INGENIEUR<br> BLACK-GOLD</h5>
+                <ul>
+                  <li>18 ct gold case</li>
+                  <li>Slate-coloured dial</li>
+                  <li>Black alligator leather strap</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <footer>
-
+        <h3>IWC INGENIEUR</h3>
+        <p>Designed by<a href="http://patrykjary.com"> Patryk Jary</a></p>
       </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js" integrity="sha512-mq6TSOBEH8eoYFBvyDQOQf63xgTeAk7ps+MHGLWZ6Byz0BqQzrP+3GIgYL+KvLaWgpL8XgDVbIRYQeLa3Vqu6A==" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
   </body>
 </html>
