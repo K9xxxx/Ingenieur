@@ -1,4 +1,7 @@
 let mainContentH2=document.querySelector(".main-content-home-h2");
+let orderATag=document.querySelector(".order-aTag");
+let orderInfo=document.querySelector(".order-info");
+let icofontClose=document.querySelector(".icofont-close");
 let mainContentInfo=document.querySelector(".info");
 let specTitle=document.querySelector(".spec-title");
 let specDetails=document.querySelector(".spec-details");
@@ -20,6 +23,17 @@ specDetalisMb.forEach((item, i) => {
   })
 });
 
+orderATag.addEventListener('click',()=>{
+  if (orderInfo.classList.contains("active")){
+    return 0;
+  }
+  else{
+    orderInfo.classList.add("active")
+  }
+})
+icofontClose.addEventListener("click",()=>{
+  orderInfo.classList.remove("active")
+})
 
 
 let tlpercentage=new TimelineMax({onUpdate:updatePercentage});

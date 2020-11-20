@@ -5,6 +5,9 @@
   font-family: 'Montserrat', sans-serif;
   color:hsl(0,0%,70%);
 }
+html {
+  scroll-behavior: smooth;
+}
 a{
   list-style: none;
   text-decoration: none;
@@ -47,19 +50,59 @@ img{
 nav{
   position:fixed;
   width:100%;
-  display:flex;
-  padding:1rem 0rem;
   justify-content:space-between;
-  background: hsl(0,0%,5%);
   z-index:99;
 }
 .navigation-div, footer{
+  width:100%;
+  margin: 0 auto;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+.navigation-div{
+  background: hsl(0,0%,5%);
+}
+.naigation-div{
+  padding:1rem 0rem 0rem;
+  z-index:99;
+}
+.navigation-div-main{
   width:80%;
   margin: 0 auto;
   display:flex;
   justify-content: space-between;
   align-items: center;
   user-select: none;
+}
+.order-info{
+  position: relative;
+  display: block;
+  width: 50%;
+  background: darkred;
+  margin:-15% auto 0;
+  text-align: center;
+  transition: margin .5s ease-out;
+  z-index:-1;
+}
+.order-info.active{
+  margin:0px auto;
+}
+
+.order-info p{
+  padding:30px;
+  color:white;
+
+}
+.icofont-close{
+  position:absolute;
+  top:0;
+  right:0;
+  padding:5px;
+  font-size:30px;
+  color:white;
+  cursor:pointer;
 }
 .span-nav>h1{
   display: inline-block;
@@ -110,6 +153,7 @@ ul li a:hover{
   padding:10px 20px;
   border-radius:15px;
   transition:background-position .5s ease-in-out;
+  cursor: pointer;
 }
 .order-aTag:hover{
   background:linear-gradient(to right,hsl(0, 100%, 31%) 33%,darkred 66%);
@@ -304,7 +348,7 @@ footer h3{
   font-family: 'Courgette', cursive;
 }
 @media screen and (max-width:1200px){
-  .navigation-div{
+  .navigation-div-main{
     width:100%;
   }
   footer{
@@ -342,6 +386,9 @@ footer h3{
 @media screen and (max-width:1000px){
   .variations-main-div{
     width:95%;
+  }
+  .order-info{
+    width:80%;
   }
   .variations-models-main{
     width:80%;
@@ -383,9 +430,10 @@ footer h3{
   }
 }
 @media screen and (max-width:800px){
-  .navigation-div{
+  .navigation-div-main{
     display: block;
     text-align:center;
+    padding-bottom:15px;
   }
   .navigation-div ul{
     display: block;
@@ -403,6 +451,10 @@ footer h3{
   }
 }
 @media screen and (max-width:600px){
+  .order-info{
+    width:100%;
+    margin-top:-20%;
+  }
   footer{
     display:block;
     text-align:center;
@@ -427,6 +479,12 @@ footer h3{
   }
   h4{
     font-size:1.3rem;
+  }
+  .order-info p{
+    font-size:18px;
+  }
+  .order-info{
+    margin-top:-40%;
   }
   .navigation-div ul {
     padding-top:10px;
